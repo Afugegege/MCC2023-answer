@@ -1,0 +1,65 @@
+Mobile Game (Solved) (100 / 100)
+Statement
+Alice is playing a mobile game on a typical Saturday afternoon.
+
+Before the game starts, Alice has A
+ power level and there are N
+ enemies with power level p1,p2,…,pN
+.
+
+Alice can do the following action zero or more times:
+
+choose an enemy with strictly less power level than Alice’s power level. Kill the enemy and increase Alice’s power level by the enemy’s power level.
+What is the minimum number of enemies Alice need to kill to have at least B
+ power level? If this is impossible, output −1
+.
+
+There are T
+ test cases to solve. Alice knows you are good in problem solving and requests your help to solve this game.
+
+Note: You could only kill an enemy once as the enemy does not respawn after death.
+
+Input format:
+The first line contains the number of test cases T
+ (1≤T≤20)
+. The description of the test cases follows:
+
+The first line of each test case contains three integers, N
+ (1≤N≤1000)
+ denoting the number of enemies, A
+ (1≤A≤109)
+ denoting Alice’s initial power level and B
+ (1≤B≤109)
+ denoting power level Alice needs to reach.
+The second line of each test case contains n
+ integers which describe the power levels of the enemies, pi
+ (1≤pi≤103)
+ for the ith
+ enemy.
+It is guaranteed that the sum of N
+ over all test cases does not exceed 1000
+.
+
+Output format:
+For each test case, output a single integer denoting the minimum number of enemies Alice needs to kill to have at least B
+ power level. If it is impossible, output −1
+.
+
+Sample Input:
+2
+5 3 10
+4 3 4 1 2
+3 20 100
+70 86 19
+Sample Output:
+3
+-1
+Explanation
+There are two test cases to solve.
+
+For first test case, there are several ways to kill the enemies in which Alice reaches at least 10 power level in three kills. Here is an example, Alice has 3 power level initially and decide to kill the 4th
+ enemy to gain 1 power level to 4. Next, Alice kills the 2nd
+ enemy and gain 3 power level to 7. Lastly, Alice kills the 1st
+ enemy to gain 4 power level to 11, which exceeds the 10 power level.
+
+For second test case, the only enemy Alice could kill is the last enemy in which Alice gains 19 power level from 20 to 39. However, after that Alice could not kill any enemies, hence, it is impossible to reach 100 power level.

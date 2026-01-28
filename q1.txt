@@ -1,0 +1,52 @@
+Collatz (Solved) (100 / 100)
+Statement
+Evirir the dragon has a list of n
+ integers a1,a2,…,an
+. Evirir will repeat the following procedure k
+ times:
+
+For each integer ai
+ in the list:
+If ai
+ is even, replace ai
+ with ai2
+.
+Otherwise, replace ai
+ with 3ai+1
+.
+In the end, what is the sum of all integers in the list?
+
+Input Format
+The first line consists of two integers n
+ and k
+ (1≤n≤1000,1≤k≤1000)
+.
+Then n
+ integers follow: a1,a2…,an
+ (1≤ai≤104)
+.
+Output Format
+Output a single integer, the sum of the integers in the final list.
+
+Sample Input 1
+5 1
+1 2 3 4 5
+Sample Output 1
+33
+Explanation
+After performing the procedure once, the list becomes {4,1,10,2,16}
+.
+Summing up, we get 4+1+10+2+16=33
+.
+
+Sample Input 2
+6 3
+3 1 4 1 5 9
+Sample Output 2
+33
+Explanation
+The list is changed like so: {3,1,4,1,5,9}→{10,4,2,4,16,28}→{5,2,1,2,8,14}→{16,1,4,1,4,7}
+.
+The sum of the integers in the final list is 16+1+4+1+4+7=33
+.
+
